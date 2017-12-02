@@ -87,6 +87,7 @@ On a high-resolution display (with a scale factor of 2.0), a line that is one po
 
 
 ##解决
+
 在实际开发者经常会遇到开发一像素线的情况，为此封住了**KRDrawLineView**类
 
 在KRDrawLineView 中定义两个宏
