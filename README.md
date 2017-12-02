@@ -104,6 +104,8 @@ if (((int)(width * [UIScreen mainScreen].scale) + 1) % 2 == 0) {
    }
 ```
 
+## 参考
+http://www.cnblogs.com/smileEvday/p/iOS_PixelVsPoint.html
 
 
 
