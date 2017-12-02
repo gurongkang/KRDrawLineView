@@ -5,7 +5,7 @@
 
 2.初始化相关属性
 
-```
+```objc
 @property (nonatomic, strong) KRDrawLineView *dashDrawLineView;
 
 
@@ -28,7 +28,7 @@
 ```
 3.调整frame, 当frame 的高大于宽认为绘制竖线，否则则为横线
 
-```
+```objc
 - (void)viewWillLayoutSubviews {
     [super viewWillLayoutSubviews];
     self.dashDrawLineView.frame = CGRectMake(0, 164, self.view.bounds.size.width, 20);
@@ -98,7 +98,7 @@ On a high-resolution display (with a scale factor of 2.0), a line that is one po
 
 在draw划线 中对奇数宽度进行处理
 
-```
+```objc
 if (((int)(width * [UIScreen mainScreen].scale) + 1) % 2 == 0) {
             adjustPixelOffset = SINGLE_LINE_ADJUST_OFFSET;
    }
