@@ -10,7 +10,7 @@
 
 #define SINGLE_LINE_WIDTH (1 / [UIScreen mainScreen].scale)
 #define SINGLE_LINE_ADJUST_OFFSET ((1 / [UIScreen mainScreen].scale) / 2)
-#define VIEW_WIDTH self.bounds.size.height
+#define VIEW_WIDTH self.bounds.size.width
 #define VIEW_HEIGHT self.bounds.size.height
 
 @implementation KRDrawLineView
@@ -28,6 +28,8 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
+        self.backgroundColor = [UIColor clearColor];
+        _lineStyle = KRDrawLineViewStyleSolidLine;
     }
     return self;
 }
@@ -64,12 +66,12 @@
     if (VIEW_HEIGHT > VIEW_WIDTH) {
         //竖线
         startPoint = CGPointMake(VIEW_WIDTH / 2 - adjustPixelOffset, _paddingStart);
-        endPoint = CGPointMake(VIEW_WIDTH / 2 - adjustPixelOffset, _paddingEnd);
+        endPoint = CGPointMake(VIEW_WIDTH / 2 - adjustPixelOffset, VIEW_HEIGHT - _paddingEnd);
     } else {
         //横线
         if (_isBottomLine) {
             startPoint = CGPointMake(_paddingStart, VIEW_HEIGHT - adjustPixelOffset);
-            endPoint = CGPointMake(VIEW_WIDTH - _paddingEnd, VIEW_WIDTH - adjustPixelOffset);
+            endPoint = CGPointMake(VIEW_WIDTH - _paddingEnd, VIEW_HEIGHT - adjustPixelOffset);
         } else {
             startPoint = CGPointMake(_paddingStart, VIEW_HEIGHT / 2 - adjustPixelOffset);
             endPoint = CGPointMake(VIEW_WIDTH - _paddingEnd, VIEW_HEIGHT / 2 - adjustPixelOffset);
