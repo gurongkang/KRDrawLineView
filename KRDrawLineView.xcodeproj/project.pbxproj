@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		544577A51FD2AB72004472FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 544577A41FD2AB72004472FB /* AppDelegate.m */; };
+		544577A81FD2AB72004472FB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 544577A71FD2AB72004472FB /* ViewController.m */; };
+		544577AB1FD2AB72004472FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 544577A91FD2AB72004472FB /* Main.storyboard */; };
+		544577AD1FD2AB72004472FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 544577AC1FD2AB72004472FB /* Assets.xcassets */; };
+		544577B01FD2AB72004472FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 544577AE1FD2AB72004472FB /* LaunchScreen.storyboard */; };
+		544577B31FD2AB72004472FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 544577B21FD2AB72004472FB /* main.m */; };
+		544577BD1FD2AB72004472FB /* KRDrawLineViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 544577BC1FD2AB72004472FB /* KRDrawLineViewTests.m */; };
+		544577C81FD2AB72004472FB /* KRDrawLineViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 544577C71FD2AB72004472FB /* KRDrawLineViewUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		544577B91FD2AB72004472FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 544577981FD2AB71004472FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5445779F1FD2AB71004472FB;
+			remoteInfo = KRDrawLineView;
+		};
+		544577C41FD2AB72004472FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 544577981FD2AB71004472FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5445779F1FD2AB71004472FB;
+			remoteInfo = KRDrawLineView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		544577A01FD2AB71004472FB /* KRDrawLineView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KRDrawLineView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		544577A31FD2AB71004472FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		544577A41FD2AB72004472FB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		544577A61FD2AB72004472FB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		544577A71FD2AB72004472FB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		544577AA1FD2AB72004472FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		544577AC1FD2AB72004472FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		544577AF1FD2AB72004472FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		544577B11FD2AB72004472FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		544577B21FD2AB72004472FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		544577B81FD2AB72004472FB /* KRDrawLineViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KRDrawLineViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		544577BC1FD2AB72004472FB /* KRDrawLineViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KRDrawLineViewTests.m; sourceTree = "<group>"; };
+		544577BE1FD2AB72004472FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		544577C31FD2AB72004472FB /* KRDrawLineViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KRDrawLineViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		544577C71FD2AB72004472FB /* KRDrawLineViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KRDrawLineViewUITests.m; sourceTree = "<group>"; };
+		544577C91FD2AB72004472FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5445779D1FD2AB71004472FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		544577B51FD2AB72004472FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		544577C01FD2AB72004472FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		544577971FD2AB71004472FB = {
+			isa = PBXGroup;
+			children = (
+				544577A21FD2AB71004472FB /* KRDrawLineView */,
+				544577BB1FD2AB72004472FB /* KRDrawLineViewTests */,
+				544577C61FD2AB72004472FB /* KRDrawLineViewUITests */,
+				544577A11FD2AB71004472FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		544577A11FD2AB71004472FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				544577A01FD2AB71004472FB /* KRDrawLineView.app */,
+				544577B81FD2AB72004472FB /* KRDrawLineViewTests.xctest */,
+				544577C31FD2AB72004472FB /* KRDrawLineViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		544577A21FD2AB71004472FB /* KRDrawLineView */ = {
+			isa = PBXGroup;
+			children = (
+				544577A31FD2AB71004472FB /* AppDelegate.h */,
+				544577A41FD2AB72004472FB /* AppDelegate.m */,
+				544577A61FD2AB72004472FB /* ViewController.h */,
+				544577A71FD2AB72004472FB /* ViewController.m */,
+				544577A91FD2AB72004472FB /* Main.storyboard */,
+				544577AC1FD2AB72004472FB /* Assets.xcassets */,
+				544577AE1FD2AB72004472FB /* LaunchScreen.storyboard */,
+				544577B11FD2AB72004472FB /* Info.plist */,
+				544577B21FD2AB72004472FB /* main.m */,
+			);
+			path = KRDrawLineView;
+			sourceTree = "<group>";
+		};
+		544577BB1FD2AB72004472FB /* KRDrawLineViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				544577BC1FD2AB72004472FB /* KRDrawLineViewTests.m */,
+				544577BE1FD2AB72004472FB /* Info.plist */,
+			);
+			path = KRDrawLineViewTests;
+			sourceTree = "<group>";
+		};
+		544577C61FD2AB72004472FB /* KRDrawLineViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				544577C71FD2AB72004472FB /* KRDrawLineViewUITests.m */,
+				544577C91FD2AB72004472FB /* Info.plist */,
+			);
+			path = KRDrawLineViewUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5445779F1FD2AB71004472FB /* KRDrawLineView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 544577CC1FD2AB72004472FB /* Build configuration list for PBXNativeTarget "KRDrawLineView" */;
+			buildPhases = (
+				5445779C1FD2AB71004472FB /* Sources */,
+				5445779D1FD2AB71004472FB /* Frameworks */,
+				5445779E1FD2AB71004472FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KRDrawLineView;
+			productName = KRDrawLineView;
+			productReference = 544577A01FD2AB71004472FB /* KRDrawLineView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		544577B71FD2AB72004472FB /* KRDrawLineViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 544577CF1FD2AB72004472FB /* Build configuration list for PBXNativeTarget "KRDrawLineViewTests" */;
+			buildPhases = (
+				544577B41FD2AB72004472FB /* Sources */,
+				544577B51FD2AB72004472FB /* Frameworks */,
+				544577B61FD2AB72004472FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				544577BA1FD2AB72004472FB /* PBXTargetDependency */,
+			);
+			name = KRDrawLineViewTests;
+			productName = KRDrawLineViewTests;
+			productReference = 544577B81FD2AB72004472FB /* KRDrawLineViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		544577C21FD2AB72004472FB /* KRDrawLineViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 544577D21FD2AB72004472FB /* Build configuration list for PBXNativeTarget "KRDrawLineViewUITests" */;
+			buildPhases = (
+				544577BF1FD2AB72004472FB /* Sources */,
+				544577C01FD2AB72004472FB /* Frameworks */,
+				544577C11FD2AB72004472FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				544577C51FD2AB72004472FB /* PBXTargetDependency */,
+			);
+			name = KRDrawLineViewUITests;
+			productName = KRDrawLineViewUITests;
+			productReference = 544577C31FD2AB72004472FB /* KRDrawLineViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		544577981FD2AB71004472FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = KR;
+				TargetAttributes = {
+					5445779F1FD2AB71004472FB = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					544577B71FD2AB72004472FB = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5445779F1FD2AB71004472FB;
+					};
+					544577C21FD2AB72004472FB = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5445779F1FD2AB71004472FB;
+					};
+				};
+			};
+			buildConfigurationList = 5445779B1FD2AB71004472FB /* Build configuration list for PBXProject "KRDrawLineView" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 544577971FD2AB71004472FB;
+			productRefGroup = 544577A11FD2AB71004472FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5445779F1FD2AB71004472FB /* KRDrawLineView */,
+				544577B71FD2AB72004472FB /* KRDrawLineViewTests */,
+				544577C21FD2AB72004472FB /* KRDrawLineViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5445779E1FD2AB71004472FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				544577B01FD2AB72004472FB /* LaunchScreen.storyboard in Resources */,
+				544577AD1FD2AB72004472FB /* Assets.xcassets in Resources */,
+				544577AB1FD2AB72004472FB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		544577B61FD2AB72004472FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		544577C11FD2AB72004472FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5445779C1FD2AB71004472FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				544577A81FD2AB72004472FB /* ViewController.m in Sources */,
+				544577B31FD2AB72004472FB /* main.m in Sources */,
+				544577A51FD2AB72004472FB /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		544577B41FD2AB72004472FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				544577BD1FD2AB72004472FB /* KRDrawLineViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		544577BF1FD2AB72004472FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				544577C81FD2AB72004472FB /* KRDrawLineViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		544577BA1FD2AB72004472FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5445779F1FD2AB71004472FB /* KRDrawLineView */;
+			targetProxy = 544577B91FD2AB72004472FB /* PBXContainerItemProxy */;
+		};
+		544577C51FD2AB72004472FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5445779F1FD2AB71004472FB /* KRDrawLineView */;
+			targetProxy = 544577C41FD2AB72004472FB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		544577A91FD2AB72004472FB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				544577AA1FD2AB72004472FB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		544577AE1FD2AB72004472FB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				544577AF1FD2AB72004472FB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		544577CA1FD2AB72004472FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		544577CB1FD2AB72004472FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		544577CD1FD2AB72004472FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KRDrawLineView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kr.KRDrawLineView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		544577CE1FD2AB72004472FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KRDrawLineView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kr.KRDrawLineView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		544577D01FD2AB72004472FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KRDrawLineViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kr.KRDrawLineViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KRDrawLineView.app/KRDrawLineView";
+			};
+			name = Debug;
+		};
+		544577D11FD2AB72004472FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KRDrawLineViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kr.KRDrawLineViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KRDrawLineView.app/KRDrawLineView";
+			};
+			name = Release;
+		};
+		544577D31FD2AB72004472FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KRDrawLineViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kr.KRDrawLineViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KRDrawLineView;
+			};
+			name = Debug;
+		};
+		544577D41FD2AB72004472FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KRDrawLineViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kr.KRDrawLineViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KRDrawLineView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5445779B1FD2AB71004472FB /* Build configuration list for PBXProject "KRDrawLineView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				544577CA1FD2AB72004472FB /* Debug */,
+				544577CB1FD2AB72004472FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		544577CC1FD2AB72004472FB /* Build configuration list for PBXNativeTarget "KRDrawLineView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				544577CD1FD2AB72004472FB /* Debug */,
+				544577CE1FD2AB72004472FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		544577CF1FD2AB72004472FB /* Build configuration list for PBXNativeTarget "KRDrawLineViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				544577D01FD2AB72004472FB /* Debug */,
+				544577D11FD2AB72004472FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		544577D21FD2AB72004472FB /* Build configuration list for PBXNativeTarget "KRDrawLineViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				544577D31FD2AB72004472FB /* Debug */,
+				544577D41FD2AB72004472FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 544577981FD2AB71004472FB /* Project object */;
+}
