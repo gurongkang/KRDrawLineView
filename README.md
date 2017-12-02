@@ -97,7 +97,7 @@ On a high-resolution display (with a scale factor of 2.0), a line that is one po
 #define SINGLE_LINE_ADJUST_OFFSET ((1 / [UIScreen mainScreen].scale) / 2)
 ```
 
-在draw划线 中对奇数宽度进行处理
+在draw画线中对奇数宽度进行处理
 
 ```objc
 if (((int)(width * [UIScreen mainScreen].scale) + 1) % 2 == 0) {
