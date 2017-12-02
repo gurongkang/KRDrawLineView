@@ -1,6 +1,42 @@
 # KRDrawLineView
 
-## 1.Point 与 Pixel
+## 使用
+1.引入项目中DrawLineView文件夹
+
+2.初始化相关属性
+
+```
+@property (nonatomic, strong) KRDrawLineView *dashDrawLineView;
+
+
+- (KRDrawLineView *)dashDrawLineView {
+    if (_dashDrawLineView == nil) {
+        _dashDrawLineView = [[KRDrawLineView alloc]init];
+        //线宽度，pixel单位
+        _dashDrawLineView.lineWidth = 1;
+        //线样式
+        _dashDrawLineView.lineStyle = KRDrawLineViewStyleDashLine;
+        //线颜色
+        _dashDrawLineView.lineColor = [UIColor redColor];
+        //起点内边距
+        _dashDrawLineView.paddingStart = 10;
+        //结束点内边距
+        _dashDrawLineView.paddingEnd = 40;
+    }
+    return _dashDrawLineView;
+}
+```
+3.调整frame, 当frame 的高大于宽认为绘制竖线，否则则为横线
+
+```
+- (void)viewWillLayoutSubviews {
+    [super viewWillLayoutSubviews];
+    self.dashDrawLineView.frame = CGRectMake(0, 164, self.view.bounds.size.width, 20);
+  }
+```
+
+
+## Point 与 Pixel
 iOS 中使用的坐标系统都是由Point来描述的。
 
 1个point不等于 1 pixel,这样的做的好处是屏蔽屏幕的差异，在布局的时候不用关注是否Retina屏、x2、x3等屏幕信息。
@@ -43,11 +79,30 @@ point 与 pixel 的关系
 On a high-resolution display (with a scale factor of 2.0), a line that is one point wide is not antialiased at all because it occupies two full pixels (from -0.5 to +0.5). To draw a line that covers only a single physical pixel, you would need to make it 0.5 points in thickness and offset its position by 0.25 points.
 
 >在非高清屏上，一个Point对应一个像素。为了防止“antialiasing”导致的奇数像素的线渲染时出现失真，你需要设置偏移0.5 Point。
-在高清屏幕上，要绘制一个像素的线，需要设置线宽为0.5个Point，同事设置偏移为0.25 Point。
-如果线宽为偶数Point的话，则不要去设置偏移，否则线条也会失真。
+
+>在高清屏幕上，要绘制一个像素的线，需要设置线宽为0.5个Point，同事设置偏移为0.25 Point。
+
+>如果线宽为偶数Point的话，则不要去设置偏移，否则线条也会失真。
 
 
 
+##解决
+在实际开发者经常会遇到开发一像素线的情况，为此封住了**KRDrawLineView**类
+
+在KRDrawLineView 中定义两个宏
+
+```objc
+#define SINGLE_LINE_WIDTH (1 / [UIScreen mainScreen].scale)
+#define SINGLE_LINE_ADJUST_OFFSET ((1 / [UIScreen mainScreen].scale) / 2)
+```
+
+在draw划线 中对奇数宽度进行处理
+
+```
+if (((int)(width * [UIScreen mainScreen].scale) + 1) % 2 == 0) {
+            adjustPixelOffset = SINGLE_LINE_ADJUST_OFFSET;
+   }
+```
 
 
 
