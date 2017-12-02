@@ -15,12 +15,17 @@
 
 @implementation KRDrawLineView
 
-
 - (instancetype)init {
     self = [super init];
     if (self) {
-        self.backgroundColor = [UIColor clearColor];
-        _lineStyle = KRDrawLineViewStyleSolidLine;
+      [self setUpUI];
+    }
+    return self;
+}
+
+- (instancetype)initWithCoder:(NSCoder *)coder {
+    if (self = [super initWithCoder:coder]) {
+         [self setUpUI];
     }
     return self;
 }
@@ -28,10 +33,15 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = [UIColor clearColor];
-        _lineStyle = KRDrawLineViewStyleSolidLine;
+        [self setUpUI];
     }
     return self;
+}
+
+
+- (void)setUpUI {
+    self.backgroundColor = [UIColor clearColor];
+    _lineStyle = KRDrawLineViewStyleSolidLine;
 }
 
 - (void)drawRect:(CGRect)rect {

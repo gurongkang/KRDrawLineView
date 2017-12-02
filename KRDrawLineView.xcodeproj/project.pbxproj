@@ -17,6 +17,8 @@
 		544577C81FD2AB72004472FB /* KRDrawLineViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 544577C71FD2AB72004472FB /* KRDrawLineViewUITests.m */; };
 		544577D81FD2AC02004472FB /* KRDrawLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 544577D71FD2AC02004472FB /* KRDrawLineView.m */; };
 		544577DC1FD2B1E1004472FB /* KRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 544577DB1FD2B1E1004472FB /* KRCodeViewController.m */; };
+		544D12BB1FD2F1B3006A9DF3 /* KRXibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 544D12B91FD2F1B3006A9DF3 /* KRXibViewController.m */; };
+		544D12BC1FD2F1B3006A9DF3 /* KRXibViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 544D12BA1FD2F1B3006A9DF3 /* KRXibViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,9 @@
 		544577D71FD2AC02004472FB /* KRDrawLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRDrawLineView.m; sourceTree = "<group>"; };
 		544577DA1FD2B1E1004472FB /* KRCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KRCodeViewController.h; sourceTree = "<group>"; };
 		544577DB1FD2B1E1004472FB /* KRCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KRCodeViewController.m; sourceTree = "<group>"; };
+		544D12B81FD2F1B3006A9DF3 /* KRXibViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KRXibViewController.h; sourceTree = "<group>"; };
+		544D12B91FD2F1B3006A9DF3 /* KRXibViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KRXibViewController.m; sourceTree = "<group>"; };
+		544D12BA1FD2F1B3006A9DF3 /* KRXibViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KRXibViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +159,9 @@
 			children = (
 				544577DA1FD2B1E1004472FB /* KRCodeViewController.h */,
 				544577DB1FD2B1E1004472FB /* KRCodeViewController.m */,
+				544D12B81FD2F1B3006A9DF3 /* KRXibViewController.h */,
+				544D12B91FD2F1B3006A9DF3 /* KRXibViewController.m */,
+				544D12BA1FD2F1B3006A9DF3 /* KRXibViewController.xib */,
 			);
 			path = TestViewController;
 			sourceTree = "<group>";
@@ -267,6 +275,7 @@
 				544577B01FD2AB72004472FB /* LaunchScreen.storyboard in Resources */,
 				544577AD1FD2AB72004472FB /* Assets.xcassets in Resources */,
 				544577AB1FD2AB72004472FB /* Main.storyboard in Resources */,
+				544D12BC1FD2F1B3006A9DF3 /* KRXibViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				544577A81FD2AB72004472FB /* KRRootViewController.m in Sources */,
+				544D12BB1FD2F1B3006A9DF3 /* KRXibViewController.m in Sources */,
 				544577D81FD2AC02004472FB /* KRDrawLineView.m in Sources */,
 				544577B31FD2AB72004472FB /* main.m in Sources */,
 				544577DC1FD2B1E1004472FB /* KRCodeViewController.m in Sources */,

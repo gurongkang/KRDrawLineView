@@ -8,6 +8,7 @@
 
 #import "KRRootViewController.h"
 #import "KRCodeViewController.h"
+#import "KRXibViewController.h"
 
 static  NSString *kKRTestViewCell = @"UITableViewCell";
 
@@ -46,6 +47,10 @@ static  NSString *kKRTestViewCell = @"UITableViewCell";
     if (indexPath.row == 0) {
         cell.textLabel.text = @"代码中用 KRDrawLineView";
     }
+    
+    if (indexPath.row == 1) {
+        cell.textLabel.text = @"xib中用 KRDrawLineView";
+    }
     return cell;
 }
 
@@ -55,6 +60,11 @@ static  NSString *kKRTestViewCell = @"UITableViewCell";
     if (indexPath.row == 0) {
         KRCodeViewController *codeVC = [[KRCodeViewController alloc]init];
         [self.navigationController pushViewController:codeVC animated:YES];
+    }
+    
+    if (indexPath.row == 1) {
+        KRXibViewController *xibVC = [[KRXibViewController alloc]init];
+        [self.navigationController pushViewController:xibVC animated:YES];
     }
 }
 
