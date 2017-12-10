@@ -28,7 +28,7 @@ static  NSString *kKRTestViewCell = @"UITableViewCell";
     
     [self.view addSubview:self.tableView];
     
-     [self registerCell];
+    [self registerCell];
 }
 
 - (void)viewWillLayoutSubviews {

@@ -51,7 +51,7 @@
         _lineColor = [UIColor lightGrayColor];
     }
     
-    CGContextSetStrokeColorWithColor(context, self.lineColor.CGColor);
+    CGContextSetStrokeColorWithColor(context, _lineColor.CGColor);
     CGContextSetShouldAntialias(context, NO);
     
     if (_lineStyle == KRDrawLineViewStyleDashLine) {

@@ -25,7 +25,7 @@ typedef NS_ENUM(NSInteger, KRDrawLineViewStyle) {
 /**
  线的颜色
  */
-@property (nonatomic, assign) IBInspectable  UIColor *lineColor;
+@property (nonatomic, strong) IBInspectable  UIColor *lineColor;
 
 /**
  线起点边距
