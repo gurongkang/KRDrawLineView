@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIView (LCLine)
+@interface UIView (KRLine)
 
 /**
  添加顶部线条
@@ -18,7 +18,7 @@
  @param right 右边距
  @param color 颜色
  */
-+ (void)lc_addTopLineToView:(UIView *)view
++ (void)kr_addTopLineToView:(UIView *)view
               offsetLeft:(CGFloat)left
              offsetRight:(CGFloat)right
                    color:(UIColor *)color;
@@ -31,7 +31,7 @@
  @param right 右边距
  @param color 颜色
  */
-+ (void)lc_addBottomLineToView:(UIView *)view
++ (void)kr_addBottomLineToView:(UIView *)view
                  offsetLeft:(CGFloat)left
                 offsetRight:(CGFloat)right
                       color:(UIColor *)color;
@@ -42,7 +42,7 @@
  @param view 视图
  @param color 颜色
  */
-+ (void)lc_addTopLineToView:(UIView *)view color:(UIColor *)color;
++ (void)kr_addTopLineToView:(UIView *)view color:(UIColor *)color;
 
 /**
  添加底部底部线条
@@ -50,7 +50,7 @@
  @param view 视图
  @param color 颜色
  */
-+ (void)lc_addBottomLineToView:(UIView *)view color:(UIColor *)color;
++ (void)kr_addBottomLineToView:(UIView *)view color:(UIColor *)color;
 
 /**
  添加底部底部线条
@@ -58,9 +58,15 @@
  @param view 视图
  @param color 颜色
  */
-+ (void)lc_addRightLineToView:(UIView *)view color:(UIColor *)color;
++ (void)kr_addRightLineToView:(UIView *)view color:(UIColor *)color;
 
-+ (void)lc_addRightLineToView:(UIView *)view
+/**
+ 添加右边线条
+ 
+ @param view 视图
+ @param color 颜色
+ */
++ (void)kr_addRightLineToView:(UIView *)view
                 offsetLeft:(CGFloat)x
                offsetRight:(CGFloat)y
                      color:(UIColor *)color;
