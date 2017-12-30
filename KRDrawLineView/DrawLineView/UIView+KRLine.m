@@ -81,7 +81,7 @@ static float kKRLinePx = 1;
     [view addSubview:v];
 }
 
-+ (void)lc_addRightLineToView:(UIView *)view
++ (void)kr_addRightLineToView:(UIView *)view
                  offsetLeft:(CGFloat)x
                 offsetRight:(CGFloat)y
                       color:(UIColor *)color {
