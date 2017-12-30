@@ -9,6 +9,7 @@
 #import "KRRootViewController.h"
 #import "KRCodeViewController.h"
 #import "KRXibViewController.h"
+#import "KRAddLineViewController.h"
 
 static  NSString *kKRTestViewCell = @"UITableViewCell";
 
@@ -51,6 +52,11 @@ static  NSString *kKRTestViewCell = @"UITableViewCell";
     if (indexPath.row == 1) {
         cell.textLabel.text = @"xib中用 KRDrawLineView";
     }
+    
+    if (indexPath.row == 2) {
+        cell.textLabel.text = @"添加分割线类Demo";
+    }
+    
     return cell;
 }
 
@@ -65,6 +71,11 @@ static  NSString *kKRTestViewCell = @"UITableViewCell";
     if (indexPath.row == 1) {
         KRXibViewController *xibVC = [[KRXibViewController alloc]init];
         [self.navigationController pushViewController:xibVC animated:YES];
+    }
+    
+    if (indexPath.row == 2) {
+        KRAddLineViewController *addLineVC = [[KRAddLineViewController alloc]init];
+        [self.navigationController pushViewController:addLineVC animated:YES];
     }
 }
 
