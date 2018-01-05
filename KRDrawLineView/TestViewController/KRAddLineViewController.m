@@ -26,6 +26,7 @@
     
     [UIView kr_addTopLineToView:testView offsetLeft:10 offsetRight:8 color:[UIColor redColor]];
     
+    [UIView kr_addRightLineToView:testView offsetLeft:10 offsetRight:0 color:[UIColor redColor]];
     [self.view addSubview:testView];
     
 }
