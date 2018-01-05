@@ -37,7 +37,7 @@ static float kKRLinePx = 1;
 }
 
 + (void)kr_addRightLineToView:(UIView *)view color:(UIColor *)color {
-    [self kr_addRightLineToView:view offsetLeft:0 offsetRight:0 color:color];
+    [self kr_addRightLineToView:view offsetTop:0 offsetBottom:0 color:color];
 }
 
 + (void)delTopLine:(UIView *)view {
@@ -82,9 +82,9 @@ static float kKRLinePx = 1;
 }
 
 + (void)kr_addRightLineToView:(UIView *)view
-                 offsetLeft:(CGFloat)x
-                offsetRight:(CGFloat)y
-                      color:(UIColor *)color {
+                    offsetTop:(CGFloat)x
+                 offsetBottom:(CGFloat)y
+                        color:(UIColor *)color {
     [self delRightLine:view];
     
     KRDrawLineView *v =

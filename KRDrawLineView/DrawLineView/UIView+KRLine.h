@@ -67,8 +67,8 @@
  @param color 颜色
  */
 + (void)kr_addRightLineToView:(UIView *)view
-                offsetLeft:(CGFloat)x
-               offsetRight:(CGFloat)y
+                offsetTop:(CGFloat)x
+               offsetBottom:(CGFloat)y
                      color:(UIColor *)color;
 
 @end
