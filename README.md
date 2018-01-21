@@ -1,7 +1,17 @@
 # KRDrawLineView
 
 ## 使用
-1.引入项目中DrawLineView文件夹
+1.引入方式
+
+（1）CocoaPods
+
+```
+pod KRDrawLine
+```
+
+（2）手动添加
+ 
+&emsp;&emsp;引入项目中DrawLineView文件夹
 
 2.初始化相关属性
 
