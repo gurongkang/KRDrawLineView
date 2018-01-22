@@ -45,7 +45,7 @@
 + (void)kr_addTopLineToView:(UIView *)view color:(UIColor *)color;
 
 /**
- 添加底部底部线条
+ 添加底部线条
 
  @param view 视图
  @param color 颜色
@@ -53,17 +53,20 @@
 + (void)kr_addBottomLineToView:(UIView *)view color:(UIColor *)color;
 
 /**
- 添加底部底部线条
+ 添加右边线条
  
  @param view 视图
  @param color 颜色
  */
 + (void)kr_addRightLineToView:(UIView *)view color:(UIColor *)color;
 
+
 /**
  添加右边线条
- 
- @param view 视图
+
+ @param view 试题
+ @param x 上边距
+ @param y 下边距
  @param color 颜色
  */
 + (void)kr_addRightLineToView:(UIView *)view

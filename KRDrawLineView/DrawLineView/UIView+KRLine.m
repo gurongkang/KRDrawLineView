@@ -97,7 +97,6 @@ static float kKRLinePx = 1;
     v.paddingEnd = y;
     v.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
     [view addSubview:v];
-
 }
 
 + (void)addBottomLineToView:(UIView *)view
