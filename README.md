@@ -1,5 +1,8 @@
 # KRDrawLineView
 
+## swift版本见 KRDrawLineViewSwift
+https://github.com/gurongkang/KRDrawLineViewSwift/tree/master
+
 ## 使用
 1.引入方式
 
