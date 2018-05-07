@@ -40,6 +40,27 @@ static float kKRLinePx = 1;
     [self kr_addRightLineToView:view offsetTop:0 offsetBottom:0 color:color];
 }
 
++ (void)kr_addMiddleLineToView:(UIView *)view
+                    offsetLeft:(CGFloat)left
+                   offsetRigth:(CGFloat)right
+                     offsetTop:(CGFloat)top
+                         color:(UIColor *)color {
+    [self delBottomLine:view];
+    
+    CGFloat topOffset =  (top + kKRLinePx) > view.frame.size.height?view.frame.size.height:top;
+    
+    KRDrawLineView *v =
+    [[KRDrawLineView alloc] initWithFrame:CGRectMake(0, topOffset - kKRLinePx,
+                                                     view.frame.size.width, kKRLinePx)];
+    v.lineWidth = kKRLinePx;
+    v.lineColor = color;
+    v.tag = 12345;
+    v.paddingStart = left;
+    v.paddingEnd = right;
+    v.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
+    [view addSubview:v];
+}
+
 + (void)delTopLine:(UIView *)view {
     UIView *v = [view viewWithTag:54321];
     
