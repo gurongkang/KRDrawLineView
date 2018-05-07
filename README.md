@@ -9,7 +9,7 @@ https://github.com/gurongkang/KRDrawLineViewSwift/tree/master
 （1）CocoaPods
 
 ```
-pod KRDrawLine
+pod 'KRDrawLine'
 ```
 
 （2）手动添加
